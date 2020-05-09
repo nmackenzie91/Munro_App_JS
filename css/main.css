@@ -1,0 +1,27 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  
+  #form-wrapper {
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+  }
+  
+  .form-item {
+    margin-right: 1.8rem;
+  }
+  
+  label.primary {
+    display: block;
+    margin: 0.4em 0;
+  }
+  
+  label::after {
+    content: ":";
+  }
+  
+  button, input[type="submit"] {
+    margin-top: 1rem;
+  }
