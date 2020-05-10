@@ -1,70 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Munro Bagger</title>
-    <h1>Munro Bagger</h1>
-    <h3>Keeping track of your treks</h3>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/app.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>Munro Bagger</title>
 
-  <body>
+        <div class="centered">
+            <h1>Munro Bagger</h1>
+            <h3>Keeping track of your treks</h3>
+        </div>
     
-    <form id="new-munro-form">
-      <div id="form-wrapper">
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <script src="js/app.js"></script>
 
-        <div class="form-item">
-          <label for="munro_name" class="primary">Munro</label>
-          <input type="text" id="munro_name" required/>
-        </div>
-        <br>
+    </head>
 
-        <div class="form-item">
-          <label for="altitude" class="primary">Altitude [metres]</label>
-          <input type="number" id="altitude" required/>
-        </div>
-        <br>
+    <body>
+        <div class="col-1">
+            <div class="centered">
+                <h3>Where have you been?</h3>
+            </div>  
 
-        <div class="form-item">
-            <label for="date_climbed" class="primary">Date Climbed</label>
-            <input type="date" id="date_climbed" required/>
-          </div>
-          <br>
+            <form id="new-munro-form">
+                <div id="form-wrapper">
+                                            
+                        <div class="form-item">
+                            <label for="munro_name" class="primary">Munro</label>
+                            <input type="text" id="munro_name" required/>
+                        </div>
+                    <br>
+
+                    <div class="form-item">
+                        <label for="altitude" class="primary">Altitude [metres]</label>
+                        <input type="number" id="altitude" required/>
+                    </div>
+                    <br>
+
+                    <div class="form-item">
+                        <label for="date_climbed" class="primary">Date Climbed</label>
+                        <input type="date" id="date_climbed" required/>
+                    </div>
+                    <br>
 
 
-        <div class="form-item">
-          <label for="views" class="primary">Views</label>
-          <select id="views">
-            <option value="" disabled selected></option>
-            <option value="Bonnie">Bonnie</option>
-            <option value="Nae Bad">Nae Bad</option>
-            <option value="Barren">Barren</option>
-          </select>
-        </div>
-        <br>
+                    <div class="form-item">
+                        <label for="views" class="primary">Views</label>
+                        <select id="views">
+                            <option value="" disabled selected></option>
+                            <option value="Bonnie">Bonnie</option>
+                            <option value="Nae Bad">Nae Bad</option>
+                            <option value="Barren">Barren</option>
+                        </select>
+                    </div>
+                    <br>
 
-        <div class="form-item">
-            <label for="difficulty" class="primary">Difficulty</label>
-            <select id="difficulty">
-              <option value="" disabled selected></option>
-              <option value="Hard">Hard</option>
-              <option value="Medium">Medium</option>
-              <option value="Easy">Easy</option>
-            </select>
-          </div>
-          <br>
+                    <div class="form-item">
+                        <label for="difficulty" class="primary">Difficulty</label>
+                        <select id="difficulty">
+                        <option value="" disabled selected></option>
+                        <option value="Hard">Hard</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Easy">Easy</option>
+                        </select>
+                    </div>
 
-      </div>
-      <input type="submit" value="Bag it!"/>
-    </form>
-    <br>
-    <button id="delete-all">Delete All</button>
-    <br>
-    <br>
+                </div>    
+                <br>
 
-<hr>
-    <h4>Completed Munros &#9989</h4>
-    <ul id="munro-list"></ul>
-  </body>
+            
+                <input type="submit" value="Bag it!"/>
+
+            </form>
+
+            <br>
+            <button id="delete-all">Delete All</button>
+            <br>
+            <br>
+
+
+
+        </div>    
+
+
+                <div class="col-2">
+                        <div class="centered">
+                            <h3>Completed Munros &#9989</h3>
+                        </div>
+                    <ul id="munro-list"></ul>
+                </div>
+
+                         
+    </body>
 </html>

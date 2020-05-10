@@ -60,19 +60,19 @@ const createMunroCompletedItem = function (form) {
     munroCompletedItem.appendChild(munroName);
 
     const altitude = document.createElement('h3')
-    altitude.textContent = form.altitude.value;
+    altitude.textContent = `${form.altitude.value}m`;
     munroCompletedItem.appendChild(altitude);
 
     const dateClimbed = document.createElement('p')
-    dateClimbed.textContent = form.date_climbed.value;
+    dateClimbed.textContent = `Bagged on: ${form.date_climbed.value}`;
     munroCompletedItem.appendChild(dateClimbed);
 
     const views = document.createElement('p')
-    views.textContent = form.views.value;
+    views.textContent = `The views were ${form.views.value}`;
     munroCompletedItem.appendChild(views);
 
     const difficulty = document.createElement('p')
-    difficulty.textContent = form.difficulty.value;
+    difficulty.textContent = `Difficulty Rating: ${form.difficulty.value}`;
     munroCompletedItem.appendChild(difficulty);
 
 

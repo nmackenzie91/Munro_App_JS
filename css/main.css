@@ -2,6 +2,9 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
   }
   
+
+  
+
   #form-wrapper {
     width: 100%;
     display: flex;
@@ -24,4 +27,33 @@ body {
   
   button, input[type="submit"] {
     margin-top: 1rem;
+  }
+
+  .col-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1010101010
+    /* margin-left: 10px */
+  }
+  
+  .col-2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1010101010
+  }
+
+
+
+  .centered {
+    position: relative;
+    /* top: 100%; */
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
   }
