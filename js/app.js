@@ -71,30 +71,32 @@ const createMunroCompletedItem = function (form) {
     views.textContent = `The views were ${form.views.value}`;
     munroCompletedItem.appendChild(views);
 
-    // const difficulty = document.createElement('p')
-    // difficulty.textContent = `Difficulty Rating: ${form.difficulty.value}`;
-    // munroCompletedItem.appendChild(difficulty);
+    const difficulty = document.createElement('p')
+    difficulty.textContent = `Difficulty Rating: ${form.difficulty.value}`;
+    munroCompletedItem.appendChild(difficulty);
 
-    const difficultyRatingFive = document.createElement('p')
-    difficultyRatingFive.textContent = `Difficulty Rating: ${form.five.value}`;
-    munroCompletedItem.appendChild(difficultyRatingFive);
+    // const difficultyRatingFive = document.createElement('p')
+    // difficultyRatingFive.textContent = `Difficulty Rating: ${form.five.value}`;
+    // munroCompletedItem.appendChild(difficultyRatingFive);
 
-    const difficultyRatingFour = document.createElement('p')
-    difficultyRatingFour.textContent = `Difficulty Rating: ${form.four.value}`;
-    munroCompletedItem.appendChild(difficultyRatingFour);
+    // const difficultyRatingFour = document.createElement('p')
+    // difficultyRatingFour.textContent = `Difficulty Rating: ${form.four.value}`;
+    // munroCompletedItem.appendChild(difficultyRatingFour);
 
-    const difficultyRatingThree = document.createElement('p')
-    difficultyRatingThree.textContent = `Difficulty Rating: ${form.three.value}`;
-    munroCompletedItem.appendChild(difficultyRatingThree);
+    // const difficultyRatingThree = document.createElement('p')
+    // difficultyRatingThree.textContent = `Difficulty Rating: ${form.three.value}`;
+    // munroCompletedItem.appendChild(difficultyRatingThree);
 
-    const difficultyRatingTwo = document.createElement('p')
-    difficultyRatingTwo.textContent = `Difficulty Rating: ${form.two.value}`;
-    munroCompletedItem.appendChild(difficultyRatingTwo);
+    // const difficultyRatingTwo = document.createElement('p')
+    // difficultyRatingTwo.textContent = `Difficulty Rating: ${form.two.value}`;
+    // munroCompletedItem.appendChild(difficultyRatingTwo);
 
-    const difficultyRatingOne = document.createElement('p')
-    difficultyRatingOne.textContent = `Difficulty Rating: ${form.one.value}`;
-    munroCompletedItem.appendChild(difficultyRatingOne);
+    // const difficultyRatingOne = document.createElement('p')
+    // difficultyRatingOne.textContent = `Difficulty Rating: ${form.one.value}`;
+    // munroCompletedItem.appendChild(difficultyRatingOne);
 
+
+    
 
     return munroCompletedItem;    
 }
