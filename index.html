@@ -6,7 +6,7 @@
 
         <div class="centered">
             <h1>Munro Bagger</h1>
-            <h3>Keeping track of your treks</h3>
+            <h3><i>Keeping track of your treks</i></h3>
         </div>
     
         
@@ -25,26 +25,26 @@
                 <div id="form-wrapper">
                                             
                         <div class="form-item">
-                            <label for="munro_name" class="primary">Munro</label>
+                            <label for="munro_name" class="primary">Munro:</label>
                             <input type="text" id="munro_name" required/>
                         </div>
                     <br>
 
                     <div class="form-item">
-                        <label for="altitude" class="primary">Altitude [metres]</label>
+                        <label for="altitude" class="primary">Altitude [metres]:</label>
                         <input type="number" id="altitude" required/>
                     </div>
                     <br>
 
                     <div class="form-item">
-                        <label for="date_climbed" class="primary">Date Climbed</label>
+                        <label for="date_climbed" class="primary">Date Climbed:</label>
                         <input type="date" id="date_climbed" required/>
                     </div>
                     <br>
 
 
                     <div class="form-item">
-                        <label for="views" class="primary">Views</label>
+                        <label for="views" class="primary">Views:</label>
                         <select id="views">
                             <option value="" disabled selected></option>
                             <option value="Bonnie">Bonnie</option>
@@ -54,7 +54,7 @@
                     </div>
                     <br>
 
-                    <div class="form-item">
+                    <!-- <div class="form-item">
                         <label for="difficulty" class="primary">Difficulty</label>
                         <select id="difficulty">
                         <option value="" disabled selected></option>
@@ -62,18 +62,47 @@
                         <option value="Medium">Medium</option>
                         <option value="Easy">Easy</option>
                         </select>
+                    </div> -->
+
+                    
+                    <p>Difficulty Rating:</p>
+
+                    <div>
+                        <input type="radio" id="five" name="rating" value="&#129406 &#129406 &#129406 &#129406 &#129406">
+                        <label for="five">&#129406 &#129406 &#129406 &#129406 &#129406</label>
                     </div>
+                    
+                    <div>
+                        <input type="radio" id="four" name="rating" value="&#129406 &#129406 &#129406 &#129406">
+                        <label for="four">&#129406 &#129406 &#129406 &#129406</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="three" name="rating" value="&#129406 &#129406 &#129406">
+                        <label for="three">&#129406 &#129406 &#129406</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="two" name="rating" value="&#129406 &#129406">
+                        <label for="two">&#129406 &#129406</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="one" name="rating" value="&#129406">
+                        <label for="one">&#129406</label>
+                    </div>
+
 
                 </div>    
                 <br>
-
+<br>
+<br>
             
                 <input type="submit" value="Bag it!"/>
 
             </form>
 
             <br>
-            <button id="delete-all">Delete All</button>
             <br>
             <br>
 
@@ -85,6 +114,8 @@
                 <div class="col-2">
                         <div class="centered">
                             <h3>Completed Munros &#9989</h3>
+                            <button id="delete-all">Delete All</button>
+
                         </div>
                     <ul id="munro-list"></ul>
                 </div>

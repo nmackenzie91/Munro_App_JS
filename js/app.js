@@ -52,7 +52,7 @@ const handleNewMunroSubmit = function (event) {
 
 const createMunroCompletedItem = function (form) {
     const munroCompletedItem = document.createElement('li'); //this is creating the list that will show once the form has been submitted
-    // munroCompletedItem.classList.add(); << this will add a class so it can be linked to CSS. CSS name goes in brackets
+    munroCompletedItem.classList.add('munro-completed-item');  //this will add a class so it can be linked to CSS. CSS name goes in brackets
 
 
     const munroName = document.createElement('h2')
@@ -71,11 +71,29 @@ const createMunroCompletedItem = function (form) {
     views.textContent = `The views were ${form.views.value}`;
     munroCompletedItem.appendChild(views);
 
-    const difficulty = document.createElement('p')
-    difficulty.textContent = `Difficulty Rating: ${form.difficulty.value}`;
-    munroCompletedItem.appendChild(difficulty);
+    // const difficulty = document.createElement('p')
+    // difficulty.textContent = `Difficulty Rating: ${form.difficulty.value}`;
+    // munroCompletedItem.appendChild(difficulty);
 
+    const difficultyRatingFive = document.createElement('p')
+    difficultyRatingFive.textContent = `Difficulty Rating: ${form.five.value}`;
+    munroCompletedItem.appendChild(difficultyRatingFive);
 
+    const difficultyRatingFour = document.createElement('p')
+    difficultyRatingFour.textContent = `Difficulty Rating: ${form.four.value}`;
+    munroCompletedItem.appendChild(difficultyRatingFour);
+
+    const difficultyRatingThree = document.createElement('p')
+    difficultyRatingThree.textContent = `Difficulty Rating: ${form.three.value}`;
+    munroCompletedItem.appendChild(difficultyRatingThree);
+
+    const difficultyRatingTwo = document.createElement('p')
+    difficultyRatingTwo.textContent = `Difficulty Rating: ${form.two.value}`;
+    munroCompletedItem.appendChild(difficultyRatingTwo);
+
+    const difficultyRatingOne = document.createElement('p')
+    difficultyRatingOne.textContent = `Difficulty Rating: ${form.one.value}`;
+    munroCompletedItem.appendChild(difficultyRatingOne);
 
 
     return munroCompletedItem;    
