@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock Salt">
         <meta charset="utf-8">
         <title>Munro Bagger</title>
 
         <div class="centered">
-            <h1>Munro Bagger</h1>
-            <h3><i>Keeping track of your treks</i></h3>
+            <h1 id="h1">Munro Bagger</h1>
+            <h2>Keeping track of your treks</h2>
         </div>
     
-        
+
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
         <script src="js/app.js"></script>
 
@@ -18,7 +21,7 @@
     <body>
         <div class="col-1">
             <div class="centered">
-                <h3>Where have you been?</h3>
+                <h2>Where have you been?</h2>
             </div>  
 
             <form id="new-munro-form">
@@ -47,9 +50,11 @@
                         <label for="views" class="primary">Views:</label>
                         <select id="views">
                             <option value="" disabled selected></option>
+                            <option value="Magnificent">Magnificent</option>
                             <option value="Bonnie">Bonnie</option>
                             <option value="Nae Bad">Nae Bad</option>
                             <option value="Barren">Barren</option>
+                            <option value="Whiteout">Whiteout</option>
                         </select>
                     </div>
                     <br>
@@ -115,11 +120,14 @@
 
                 <div class="col-2">
                         <div class="centered">
-                            <h3>Completed Munros &#9989</h3>
-                            <button id="delete-all">Delete All</button>
+                            <h2>Completed Munros &#10004</h2>
 
                         </div>
                     <ul id="munro-list"></ul>
+                    <div class="centered">
+
+                    <button id="delete-all">Remove All</button>
+</div>
                 </div>
 
                          

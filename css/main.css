@@ -1,9 +1,18 @@
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    background: rgb(161, 161, 250);
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    background: black url('../Images/IMG_4615.JPG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 5px grey;
+    font-family: Jost;
+    font-size: 16px;
   }
   
-
+#h1 {
+    font-family: Rock Salt;
+    font-size: 50px;
+}
   
 
   #form-wrapper {
@@ -38,6 +47,11 @@ body {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    font-family: Jost;
+    color: white;
+    text-shadow: 1px 1px 5px grey;
+    font-size: 18px;
+
 }
 
 
@@ -48,12 +62,16 @@ button {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    font-family: Jost;
+    color: white;
+    text-shadow: 1px 1px 5px grey;
+    font-size:18px;
 }
 
 
   .col-1 {
     position: relative;
-    width: 50%;
+    width: 40%;
     float: left;
     height: 100%;
     /* background-color: #ffffff; */
@@ -63,7 +81,7 @@ button {
   
   .col-2 {
     position: relative;
-    width: 50%;
+    width: 60%;
     float: left;
     height: 100%;
     /* background-color: #ffffff; */
@@ -90,7 +108,8 @@ button {
   .munro-completed-item {
     margin: 0.5rem 0.5rem;
     padding: 0.5rem 0.8rem;
-    border: 2px solid #075504ad;
+    border: 2px ridge #075504ad;
     border-radius: 5%;
     background: #73977f;
+    opacity: 90%;
   }
