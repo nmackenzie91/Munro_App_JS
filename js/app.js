@@ -18,8 +18,71 @@ Create a list in HTML
 Append the submitted data to the list
 Add a "Delete All" <button> which clears all of the list items from the list
 
-
-
-
-
 */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const newMunro = document.querySelector('#new-munro-form');
+    //query selector on the form created in the HTML
+
+    newMunro.addEventListener('submit', handleNewMunroSubmit);
+    //if a submit happens, it will call the following function, which is defined out of the DOM function
+
+
+    const deleteAllButton = document.querySelector('#delete-all');
+
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
+    deleteAllButton.addEventListener('mouseover', handleDeleteAllHover);
+
+})
+
+
+const handleNewMunroSubmit = function (event) {
+    event.preventDefault();
+
+    const munroCompletedItem = createMunroCompletedItem(event.target);
+                                //^^^this is defined below
+    const munroCompleted = document.querySelector('#munro-list');
+    munroCompleted.appendChild(munroCompletedItem);
+
+    event.target.reset();                            
+}
+
+
+const createMunroCompletedItem = function (form) {
+    const munroCompletedItem = document.createElement('li'); //this is creating the list that will show once the form has been submitted
+    // munroCompletedItem.classList.add(); << this will add a class so it can be linked to CSS. CSS name goes in brackets
+
+
+    const munroName = document.createElement('h2')
+    munroName.textContent = form.munro_name.value;
+    munroCompletedItem.appendChild(munroName);
+
+    const altitude = document.createElement('h3')
+    altitude.textContent = form.altitude.value;
+    munroCompletedItem.appendChild(altitude);
+
+    const dateClimbed = document.createElement('p')
+    dateClimbed.textContent = form.date_climbed.value;
+    munroCompletedItem.appendChild(dateClimbed);
+
+    const views = document.createElement('p')
+    views.textContent = form.views.value;
+    munroCompletedItem.appendChild(views);
+
+    const difficulty = document.createElement('p')
+    difficulty.textContent = form.difficulty.value;
+    munroCompletedItem.appendChild(difficulty);
+
+
+
+
+    return munroCompletedItem;    
+}
+
+
+const handleDeleteAllClick = function (event) {
+    const munroCompleted = document.querySelector('#munro-list');
+    munroCompleted.innerHTML = ' ';
+}
